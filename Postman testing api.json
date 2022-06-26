@@ -1,0 +1,2742 @@
+{
+	"info": {
+		"_postman_id": "a5ba012f-8606-492f-9b59-96299964ab16",
+		"name": "kilobyte",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Sam\",\r\n    \"phone\":9976543210,\r\n    \"password\":\"sam9976\",\r\n    \"role\":\"customer\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/auth/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "admin signup",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Naveen\",\r\n    \"phone\":9876543210,\r\n    \"password\":\"naveen9876\",\r\n    \"role\":\"admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/auth/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "196"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c4-In/NjumMeJr5RRudyMYvrH9iHBg\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Jun 2022 14:48:55 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"authtoken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjJiODcxZDczYmZhYjRmOWQwYmExN2ExIiwicm9sZSI6ImFkbWluIn0sImlhdCI6MTY1NjI1NDkzNX0.nFZ-KgJckQ-jVLo0yCAe9QGA33Ykc4yAtHggRN7U52Q\"\n}"
+				},
+				{
+					"name": "customer signup",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Sam\",\r\n    \"phone\":9976543210,\r\n    \"password\":\"sam9976\",\r\n    \"role\":\"customer\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/auth/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "200"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c8-DEnRPPzvYhtOWf0FuhkRQBAFD90\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Jun 2022 15:25:31 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"authtoken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjJiODdhNmJkYjE0M2NiN2M1YzQ5NDI5Iiwicm9sZSI6ImN1c3RvbWVyIn0sImlhdCI6MTY1NjI1NzEzMX0.1_bbDrqgeW75hDRqhlT8P3lIi-rGJyvtNercWeeyPT4\"\n}"
+				},
+				{
+					"name": "delivery person signup",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"John\",\r\n    \"phone\":9076543210,\r\n    \"password\":\"john9076\",\r\n    \"role\":\"driver\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/auth/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "197"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c5-a8S+Tf9WT+J12+HVcwt/HfjXQ3Y\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Jun 2022 15:32:41 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"authtoken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjJiODdjMTk2YzcwOTMwMjU3MmEwNjAwIiwicm9sZSI6ImRyaXZlciJ9LCJpYXQiOjE2NTYyNTc1NjF9.wslJnM_BrxS80NtpLP-M5jqNUGopkOE9Lm8OJ4tWnWw\"\n}"
+				},
+				{
+					"name": "phone number already exists",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Sam\",\r\n    \"phone\":9876543210,\r\n    \"password\":\"sam9876\",\r\n    \"role\":\"customer\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/auth/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "46"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2e-ja5gNW6xvkm2O+bprlDvBso9qEo\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Jun 2022 15:25:01 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"errors\": \"A user with same phone no. exists\"\n}"
+				}
+			]
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"phone\":9876543210,\r\n    \"password\":\"naveen9876\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "admin login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"phone\":9876543210,\r\n    \"password\":\"naveen9876\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "196"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c4-CkiTo/gVax5+W3tjI57wGjbU7jY\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Jun 2022 15:04:53 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"authtoken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjJiODcxZDczYmZhYjRmOWQwYmExN2ExIiwicm9sZSI6ImFkbWluIn0sImlhdCI6MTY1NjI1NTg5M30.TuEmQYPycoGtnOBE8CFNepRLswR657ZAEQw6AAHxOG0\"\n}"
+				},
+				{
+					"name": "customer login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"phone\":9976543210,\r\n    \"password\":\"sam9976\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "200"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c8-bY+Y0nTEDHPuSfBwDMq/v6xXROs\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Jun 2022 15:31:04 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"authtoken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjJiODdhNmJkYjE0M2NiN2M1YzQ5NDI5Iiwicm9sZSI6ImN1c3RvbWVyIn0sImlhdCI6MTY1NjI1NzQ2NH0.ncq4XhkDMNfoniv0SQ1rEJEQ-RxRxrOqgm2kQBAXdlw\"\n}"
+				},
+				{
+					"name": "delivery person login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"phone\":9076543210,\r\n    \"password\":\"john9076\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "197"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c5-5FpvAu8HxuQYtdOx5zU41tKDF6Y\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Jun 2022 15:33:30 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"authtoken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjJiODdjMTk2YzcwOTMwMjU3MmEwNjAwIiwicm9sZSI6ImRyaXZlciJ9LCJpYXQiOjE2NTYyNTc2MTB9.0ApjeF0wWAAGEZBCwv2tiONMPTVF2zvege715mGfsbU\"\n}"
+				},
+				{
+					"name": "Invalid credentials",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"phone\":9876543210,\r\n    \"password\":\"sam9976\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "56"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"38-EbeMKp8ABH0k4+4z0JJAMdO/rqY\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Jun 2022 15:31:23 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": \"Please try to login with correct credentials\"\n}"
+				}
+			]
+		},
+		{
+			"name": "admin add item",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "auth_token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjJiODcxZDczYmZhYjRmOWQwYmExN2ExIiwicm9sZSI6ImFkbWluIn0sImlhdCI6MTY1NjI1NTg5M30.TuEmQYPycoGtnOBE8CFNepRLswR657ZAEQw6AAHxOG0",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Disprin\",\r\n    \"category\":\"Pharmacy\",\r\n    \"addresses\":[\r\n       \"Apollo Medicine, Sector 63, Gurgaon, Lat - 12.25, Long - 28.52\", \r\n       \"Apollo Medicine, Sector 22, Gurgaon, Lat - 12.20, Long - 28.29\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/admin/additem",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"admin",
+						"additem"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Item 1 added",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "auth_token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjJiODcxZDczYmZhYjRmOWQwYmExN2ExIiwicm9sZSI6ImFkbWluIn0sImlhdCI6MTY1NjI1NTg5M30.TuEmQYPycoGtnOBE8CFNepRLswR657ZAEQw6AAHxOG0",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Chips\",\r\n    \"category\":\"Food and Beverages\",\r\n    \"addresses\":[\r\n       \"24x7 Sector 54, Gurgaon, Lat - 12.21, Long - 28.72\", \r\n       \"Big Bazaar, Sector 25, Gurgaon, Lat - 12.23, Long - 28.79\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/admin/additem",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"admin",
+								"additem"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "27"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1b-OibasvIxOj64YpE4x+eysE5sKuc\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Jun 2022 15:17:31 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Item Created.\"\n}"
+				},
+				{
+					"name": "Item 2 added",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "auth_token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjJiODcxZDczYmZhYjRmOWQwYmExN2ExIiwicm9sZSI6ImFkbWluIn0sImlhdCI6MTY1NjI1NTg5M30.TuEmQYPycoGtnOBE8CFNepRLswR657ZAEQw6AAHxOG0",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Disprin\",\r\n    \"category\":\"Pharmacy\",\r\n    \"addresses\":[\r\n       \"Apollo Medicine, Sector 63, Gurgaon, Lat - 12.25, Long - 28.52\", \r\n       \"Apollo Medicine, Sector 22, Gurgaon, Lat - 12.20, Long - 28.29\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/admin/additem",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"admin",
+								"additem"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "27"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1b-OibasvIxOj64YpE4x+eysE5sKuc\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Jun 2022 15:18:59 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Item Created.\"\n}"
+				},
+				{
+					"name": "Item already exists",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "auth_token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjJiODcxZDczYmZhYjRmOWQwYmExN2ExIiwicm9sZSI6ImFkbWluIn0sImlhdCI6MTY1NjI1NTg5M30.TuEmQYPycoGtnOBE8CFNepRLswR657ZAEQw6AAHxOG0",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Disprin\",\r\n    \"category\":\"Pharmacy\",\r\n    \"addresses\":[\r\n       \"Apollo Medicine, Sector 63, Gurgaon, Lat - 12.25, Long - 28.52\", \r\n       \"Apollo Medicine, Sector 22, Gurgaon, Lat - 12.20, Long - 28.29\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/admin/additem",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"admin",
+								"additem"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "20"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"14-0xI2N2UJBxC2gE1c64Kqqsgbve8\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Jun 2022 15:19:34 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "Item already exists."
+				},
+				{
+					"name": "unauthorized access",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "auth_token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjJiODdhNmJkYjE0M2NiN2M1YzQ5NDI5Iiwicm9sZSI6ImN1c3RvbWVyIn0sImlhdCI6MTY1NjI1NzQ2NH0.ncq4XhkDMNfoniv0SQ1rEJEQ-RxRxrOqgm2kQBAXdlw",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Disprin\",\r\n    \"category\":\"Pharmacy\",\r\n    \"addresses\":[\r\n       \"Apollo Medicine, Sector 63, Gurgaon, Lat - 12.25, Long - 28.52\", \r\n       \"Apollo Medicine, Sector 22, Gurgaon, Lat - 12.20, Long - 28.29\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/admin/additem",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"admin",
+								"additem"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "21"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"15-b/cytRJRM2bC8QpF6yxYdXCW+5Q\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Jun 2022 16:23:53 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "\"Unauthorized access\""
+				}
+			]
+		},
+		{
+			"name": "admin get all orders",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "auth_token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjJiODcxZDczYmZhYjRmOWQwYmExN2ExIiwicm9sZSI6ImFkbWluIn0sImlhdCI6MTY1NjI1NTg5M30.TuEmQYPycoGtnOBE8CFNepRLswR657ZAEQw6AAHxOG0",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3001/admin/getallorder",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"admin",
+						"getallorder"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "admin get orders list",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "auth_token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjJiODcxZDczYmZhYjRmOWQwYmExN2ExIiwicm9sZSI6ImFkbWluIn0sImlhdCI6MTY1NjI1NTg5M30.TuEmQYPycoGtnOBE8CFNepRLswR657ZAEQw6AAHxOG0",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3001/admin/getallorder",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"admin",
+								"getallorder"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "456"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1c8-T2tlYytcHLWrAwKAQmbZNWdCDTM\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Jun 2022 15:54:07 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"62b880654899d6b67a7b73ff\",\n        \"items\": [\n            {\n                \"name\": \"Chips\",\n                \"qty\": 5,\n                \"_id\": \"62b880654899d6b67a7b7402\"\n            },\n            {\n                \"name\": \"Disprin\",\n                \"qty\": 4,\n                \"_id\": \"62b880654899d6b67a7b7405\"\n            }\n        ],\n        \"driverid\": null,\n        \"status\": \"Task created\",\n        \"custid\": \"62b87a6bdb143cb7c5c49429\",\n        \"pickloc\": [\n            \"24x7 Sector 54, Gurgaon, Lat - 12.21, Long - 28.72\",\n            \"Apollo Medicine, Sector 63, Gurgaon, Lat - 12.25, Long - 28.52\"\n        ],\n        \"createdAt\": \"2022-06-26T15:51:01.631Z\",\n        \"updatedAt\": \"2022-06-26T15:51:01.869Z\",\n        \"__v\": 0\n    }\n]"
+				},
+				{
+					"name": "unauthorized access",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "auth_token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjJiODdhNmJkYjE0M2NiN2M1YzQ5NDI5Iiwicm9sZSI6ImN1c3RvbWVyIn0sImlhdCI6MTY1NjI1NzEzMX0.1_bbDrqgeW75hDRqhlT8P3lIi-rGJyvtNercWeeyPT4",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3001/admin/getallorder",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"admin",
+								"getallorder"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "21"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"15-b/cytRJRM2bC8QpF6yxYdXCW+5Q\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Jun 2022 15:55:10 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "\"Unauthorized access\""
+				}
+			]
+		},
+		{
+			"name": "admin assign delivery person to order",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "auth_token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjJiODcxZDczYmZhYjRmOWQwYmExN2ExIiwicm9sZSI6ImFkbWluIn0sImlhdCI6MTY1NjI1NTg5M30.TuEmQYPycoGtnOBE8CFNepRLswR657ZAEQw6AAHxOG0",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3001/admin/order/:orderid/driver/:driverid",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"admin",
+						"order",
+						":orderid",
+						"driver",
+						":driverid"
+					],
+					"variable": [
+						{
+							"key": "orderid",
+							"value": "62b880654899d6b67a7b73ff"
+						},
+						{
+							"key": "driverid",
+							"value": "62b87c196c709302572a0600"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "delivery person assigned to order",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "auth_token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjJiODcxZDczYmZhYjRmOWQwYmExN2ExIiwicm9sZSI6ImFkbWluIn0sImlhdCI6MTY1NjI1NTg5M30.TuEmQYPycoGtnOBE8CFNepRLswR657ZAEQw6AAHxOG0",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3001/admin/order/:orderid/driver/:driverid",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"admin",
+								"order",
+								":orderid",
+								"driver",
+								":driverid"
+							],
+							"variable": [
+								{
+									"key": "orderid",
+									"value": "62b880654899d6b67a7b73ff"
+								},
+								{
+									"key": "driverid",
+									"value": "62b87c196c709302572a0600"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "52"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"34-cOYba1yPc+lqqhAzxH0obSaLI3w\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Jun 2022 15:56:49 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Delivery person assigned to the order.\"\n}"
+				},
+				{
+					"name": "order is already processing",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "auth_token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjJiODcxZDczYmZhYjRmOWQwYmExN2ExIiwicm9sZSI6ImFkbWluIn0sImlhdCI6MTY1NjI1NTg5M30.TuEmQYPycoGtnOBE8CFNepRLswR657ZAEQw6AAHxOG0",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3001/admin/order/:orderid/driver/:driverid",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"admin",
+								"order",
+								":orderid",
+								"driver",
+								":driverid"
+							],
+							"variable": [
+								{
+									"key": "orderid",
+									"value": "62b880654899d6b67a7b73ff"
+								},
+								{
+									"key": "driverid",
+									"value": "62b87c196c709302572a0600"
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "28"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1c-4ipnmuwGUM6peikHcQGUsuSZZ/s\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Jun 2022 15:59:22 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "Order is already processing."
+				},
+				{
+					"name": "driver not found",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "auth_token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjJiODcxZDczYmZhYjRmOWQwYmExN2ExIiwicm9sZSI6ImFkbWluIn0sImlhdCI6MTY1NjI1NTg5M30.TuEmQYPycoGtnOBE8CFNepRLswR657ZAEQw6AAHxOG0",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3001/admin/order/:orderid/driver/:driverid",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"admin",
+								"order",
+								":orderid",
+								"driver",
+								":driverid"
+							],
+							"variable": [
+								{
+									"key": "orderid",
+									"value": "62b880654899d6b67a7b73ff"
+								},
+								{
+									"key": "driverid",
+									"value": "62b87c196c709302572a0601"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "16"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"10-CRTVhwm7/4rKqE67a9a43HQXeYo\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Jun 2022 16:00:06 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "Driver not found"
+				},
+				{
+					"name": "order not found",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "auth_token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjJiODcxZDczYmZhYjRmOWQwYmExN2ExIiwicm9sZSI6ImFkbWluIn0sImlhdCI6MTY1NjI1NTg5M30.TuEmQYPycoGtnOBE8CFNepRLswR657ZAEQw6AAHxOG0",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3001/admin/order/:orderid/driver/:driverid",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"admin",
+								"order",
+								":orderid",
+								"driver",
+								":driverid"
+							],
+							"variable": [
+								{
+									"key": "orderid",
+									"value": "62b880654899d6b67a7b63ff"
+								},
+								{
+									"key": "driverid",
+									"value": "62b87c196c709302572a0600"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "15"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"f-SUy8f6bnkhW+gSIPnM+VP9zboFo\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Jun 2022 16:01:22 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "Order not found"
+				},
+				{
+					"name": "not a driver id",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "auth_token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjJiODcxZDczYmZhYjRmOWQwYmExN2ExIiwicm9sZSI6ImFkbWluIn0sImlhdCI6MTY1NjI1NTg5M30.TuEmQYPycoGtnOBE8CFNepRLswR657ZAEQw6AAHxOG0",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3001/admin/order/:orderid/driver/:driverid",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"admin",
+								"order",
+								":orderid",
+								"driver",
+								":driverid"
+							],
+							"variable": [
+								{
+									"key": "orderid",
+									"value": "62b880654899d6b67a7b63ff"
+								},
+								{
+									"key": "driverid",
+									"value": "62b87a6bdb143cb7c5c49429"
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "25"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"19-0/7kIwhc1ph/AlNSpUx4QJ61Sbc\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Jun 2022 16:01:54 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "This is not a driver id!!"
+				},
+				{
+					"name": "unauthorized access",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "auth_token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjJiODdhNmJkYjE0M2NiN2M1YzQ5NDI5Iiwicm9sZSI6ImN1c3RvbWVyIn0sImlhdCI6MTY1NjI1NzQ2NH0.ncq4XhkDMNfoniv0SQ1rEJEQ-RxRxrOqgm2kQBAXdlw",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3001/admin/order/:orderid/driver/:driverid",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"admin",
+								"order",
+								":orderid",
+								"driver",
+								":driverid"
+							],
+							"variable": [
+								{
+									"key": "orderid",
+									"value": "62b880654899d6b67a7b73ff"
+								},
+								{
+									"key": "driverid",
+									"value": "62b87c196c709302572a0600"
+								}
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "21"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"15-b/cytRJRM2bC8QpF6yxYdXCW+5Q\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Jun 2022 16:25:44 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "\"Unauthorized access\""
+				}
+			]
+		},
+		{
+			"name": "customer get all items",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "auth_token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjJiODdhNmJkYjE0M2NiN2M1YzQ5NDI5Iiwicm9sZSI6ImN1c3RvbWVyIn0sImlhdCI6MTY1NjI1NzEzMX0.1_bbDrqgeW75hDRqhlT8P3lIi-rGJyvtNercWeeyPT4",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3001/customer/getallitems",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"customer",
+						"getallitems"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "customer get items list",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "auth_token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjJiODdhNmJkYjE0M2NiN2M1YzQ5NDI5Iiwicm9sZSI6ImN1c3RvbWVyIn0sImlhdCI6MTY1NjI1NzEzMX0.1_bbDrqgeW75hDRqhlT8P3lIi-rGJyvtNercWeeyPT4",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3001/customer/getallitems",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"customer",
+								"getallitems"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "600"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"258-cT27xkHs1bW6i+G7BU91WZkIE+E\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Jun 2022 15:27:43 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"62b8788adb143cb7c5c49420\",\n        \"name\": \"Chips\",\n        \"category\": \"Food and Beverages\",\n        \"addresses\": [\n            \"24x7 Sector 54, Gurgaon, Lat - 12.21, Long - 28.72\",\n            \"Big Bazaar, Sector 25, Gurgaon, Lat - 12.23, Long - 28.79\"\n        ],\n        \"createdAt\": \"2022-06-26T15:17:31.208Z\",\n        \"updatedAt\": \"2022-06-26T15:17:31.208Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"62b878e3db143cb7c5c49423\",\n        \"name\": \"Disprin\",\n        \"category\": \"Pharmacy\",\n        \"addresses\": [\n            \"Apollo Medicine, Sector 63, Gurgaon, Lat - 12.25, Long - 28.52\",\n            \"Apollo Medicine, Sector 22, Gurgaon, Lat - 12.20, Long - 28.29\"\n        ],\n        \"createdAt\": \"2022-06-26T15:18:59.734Z\",\n        \"updatedAt\": \"2022-06-26T15:18:59.734Z\",\n        \"__v\": 0\n    }\n]"
+				},
+				{
+					"name": "Invalid token",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "auth_token",
+								"value": "eyJhbGciOiJIUzI1NisInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjJiODdhNmJkYjE0M2NiN2M1YzQ5NDI5Iiwicm9sZSI6ImN1c3RvbWVyIn0sImlhdCI6MTY1NjI1NzEzMX0.1_bbDrqgeW75hDRqhlT8P3lIi-rGJyvtNercWeeyPT4",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3001/customer/getallitems",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"customer",
+								"getallitems"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "39"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"27-IbjXFkP5d7EcsT34KZ946PLHs8E\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Jun 2022 15:34:33 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "Please authenticate using a valid token"
+				},
+				{
+					"name": "unauthorized access",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "auth_token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjJiODdjMTk2YzcwOTMwMjU3MmEwNjAwIiwicm9sZSI6ImRyaXZlciJ9LCJpYXQiOjE2NTYyNTc2MTB9.0ApjeF0wWAAGEZBCwv2tiONMPTVF2zvege715mGfsbU",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3001/customer/getallitems",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"customer",
+								"getallitems"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "21"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"15-b/cytRJRM2bC8QpF6yxYdXCW+5Q\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Jun 2022 15:35:15 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "\"Unauthorized access\""
+				}
+			]
+		},
+		{
+			"name": "customer create order",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "auth_token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjJiODdhNmJkYjE0M2NiN2M1YzQ5NDI5Iiwicm9sZSI6ImN1c3RvbWVyIn0sImlhdCI6MTY1NjI1NzEzMX0.1_bbDrqgeW75hDRqhlT8P3lIi-rGJyvtNercWeeyPT4",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"items\":[\r\n        {\"name\": \"Chips\", \"qty\":5},\r\n        {\"name\": \"Disprin\", \"qty\":4}\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/customer/createorder",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"customer",
+						"createorder"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "order created",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "auth_token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjJiODdhNmJkYjE0M2NiN2M1YzQ5NDI5Iiwicm9sZSI6ImN1c3RvbWVyIn0sImlhdCI6MTY1NjI1NzEzMX0.1_bbDrqgeW75hDRqhlT8P3lIi-rGJyvtNercWeeyPT4",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"items\":[\r\n        {\"name\": \"Chips\", \"qty\":5},\r\n        {\"name\": \"Disprin\", \"qty\":4}\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/customer/createorder",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"customer",
+								"createorder"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "27"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1b-xV2as0lh77J0ho+1QBUy9KTLKUY\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Jun 2022 15:51:01 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Order created\"\n}"
+				},
+				{
+					"name": "item not available",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "auth_token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjJiODdhNmJkYjE0M2NiN2M1YzQ5NDI5Iiwicm9sZSI6ImN1c3RvbWVyIn0sImlhdCI6MTY1NjI1NzEzMX0.1_bbDrqgeW75hDRqhlT8P3lIi-rGJyvtNercWeeyPT4",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"items\":[\r\n        {\"name\": \"Chips\", \"qty\":5},\r\n        {\"name\": \"Coke\", \"qty\":4}\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/customer/createorder",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"customer",
+								"createorder"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "66"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"42-R7v/hgdSC2yzNGT/zr9pzWJS3Kc\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Jun 2022 16:04:12 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "Items not available!!!! create another order with available items."
+				},
+				{
+					"name": "unauthorized access",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "auth_token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjJiODcxZDczYmZhYjRmOWQwYmExN2ExIiwicm9sZSI6ImFkbWluIn0sImlhdCI6MTY1NjI1NTg5M30.TuEmQYPycoGtnOBE8CFNepRLswR657ZAEQw6AAHxOG0",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"items\":[\r\n        {\"name\": \"Chips\", \"qty\":5},\r\n        {\"name\": \"Disprin\", \"qty\":4}\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/customer/createorder",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"customer",
+								"createorder"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "21"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"15-b/cytRJRM2bC8QpF6yxYdXCW+5Q\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Jun 2022 15:51:45 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "\"Unauthorized access\""
+				}
+			]
+		},
+		{
+			"name": "driver get all status",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "auth_token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjJiODdjMTk2YzcwOTMwMjU3MmEwNjAwIiwicm9sZSI6ImRyaXZlciJ9LCJpYXQiOjE2NTYyNTc2MTB9.0ApjeF0wWAAGEZBCwv2tiONMPTVF2zvege715mGfsbU",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3001/driver/getallstatus",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"driver",
+						"getallstatus"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "driver get status list",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "auth_token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjJiODdjMTk2YzcwOTMwMjU3MmEwNjAwIiwicm9sZSI6ImRyaXZlciJ9LCJpYXQiOjE2NTYyNTc2MTB9.0ApjeF0wWAAGEZBCwv2tiONMPTVF2zvege715mGfsbU",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3001/driver/getallstatus",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"driver",
+								"getallstatus"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "98"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"62-ebXAKGS3sTg9OQz8vS2NpMXb61c\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Jun 2022 16:08:31 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    \"Task created\",\n    \"Driver assigned\",\n    \"Reached Store\",\n    \"Items Picked\",\n    \"Enroute\",\n    \"Delivered\",\n    \"Canceled\"\n]"
+				},
+				{
+					"name": "unauthorized access",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "auth_token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjJiODdhNmJkYjE0M2NiN2M1YzQ5NDI5Iiwicm9sZSI6ImN1c3RvbWVyIn0sImlhdCI6MTY1NjI1NzQ2NH0.ncq4XhkDMNfoniv0SQ1rEJEQ-RxRxrOqgm2kQBAXdlw",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3001/driver/getallstatus",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"driver",
+								"getallstatus"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "21"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"15-b/cytRJRM2bC8QpF6yxYdXCW+5Q\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Jun 2022 16:09:51 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "\"Unauthorized access\""
+				}
+			]
+		},
+		{
+			"name": "driver update order status",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "auth_token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjJiODdjMTk2YzcwOTMwMjU3MmEwNjAwIiwicm9sZSI6ImRyaXZlciJ9LCJpYXQiOjE2NTYyNTc2MTB9.0ApjeF0wWAAGEZBCwv2tiONMPTVF2zvege715mGfsbU",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"status\":\"Enroute\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/driver/updatestatus/:orderid",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"driver",
+						"updatestatus",
+						":orderid"
+					],
+					"variable": [
+						{
+							"key": "orderid",
+							"value": "62b880654899d6b67a7b73ff"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "order status updated",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "auth_token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjJiODdjMTk2YzcwOTMwMjU3MmEwNjAwIiwicm9sZSI6ImRyaXZlciJ9LCJpYXQiOjE2NTYyNTc2MTB9.0ApjeF0wWAAGEZBCwv2tiONMPTVF2zvege715mGfsbU",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"status\":\"Enroute\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/driver/updatestatus/:orderid",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"driver",
+								"updatestatus",
+								":orderid"
+							],
+							"variable": [
+								{
+									"key": "orderid",
+									"value": "62b880654899d6b67a7b73ff"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "34"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"22-51mpS3VNAfERw0NLwrzGnxUOWZo\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Jun 2022 16:16:36 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Order status updated\"\n}"
+				},
+				{
+					"name": "status already updated",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "auth_token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjJiODdjMTk2YzcwOTMwMjU3MmEwNjAwIiwicm9sZSI6ImRyaXZlciJ9LCJpYXQiOjE2NTYyNTc2MTB9.0ApjeF0wWAAGEZBCwv2tiONMPTVF2zvege715mGfsbU",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"status\":\"Enroute\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/driver/updatestatus/:orderid",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"driver",
+								"updatestatus",
+								":orderid"
+							],
+							"variable": [
+								{
+									"key": "orderid",
+									"value": "62b880654899d6b67a7b73ff"
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "32"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"20-ChT+Cv/z1P/m9NlVfnxgAlxioYs\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Jun 2022 16:18:02 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "Order status is already updated."
+				},
+				{
+					"name": "status is already ahead",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "auth_token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjJiODdjMTk2YzcwOTMwMjU3MmEwNjAwIiwicm9sZSI6ImRyaXZlciJ9LCJpYXQiOjE2NTYyNTc2MTB9.0ApjeF0wWAAGEZBCwv2tiONMPTVF2zvege715mGfsbU",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"status\":\"Driver assigned\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/driver/updatestatus/:orderid",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"driver",
+								"updatestatus",
+								":orderid"
+							],
+							"variable": [
+								{
+									"key": "orderid",
+									"value": "62b880654899d6b67a7b73ff"
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "46"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2e-54yTuyZy9/n9RWDNe72boJNGlvE\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Jun 2022 16:20:13 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "Order status is already ahead of given status."
+				},
+				{
+					"name": "invalid status",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "auth_token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjJiODdjMTk2YzcwOTMwMjU3MmEwNjAwIiwicm9sZSI6ImRyaXZlciJ9LCJpYXQiOjE2NTYyNTc2MTB9.0ApjeF0wWAAGEZBCwv2tiONMPTVF2zvege715mGfsbU",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"status\":\"Enrouted\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/driver/updatestatus/:orderid",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"driver",
+								"updatestatus",
+								":orderid"
+							],
+							"variable": [
+								{
+									"key": "orderid",
+									"value": "62b880654899d6b67a7b73ff"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "16"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"10-9PwIzzUyopUNZNgoWfx24mPK0yQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Jun 2022 16:20:59 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "Invalid status!!"
+				},
+				{
+					"name": "order not found",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "auth_token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjJiODdjMTk2YzcwOTMwMjU3MmEwNjAwIiwicm9sZSI6ImRyaXZlciJ9LCJpYXQiOjE2NTYyNTc2MTB9.0ApjeF0wWAAGEZBCwv2tiONMPTVF2zvege715mGfsbU",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"status\":\"Enroute\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/driver/updatestatus/:orderid",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"driver",
+								"updatestatus",
+								":orderid"
+							],
+							"variable": [
+								{
+									"key": "orderid",
+									"value": "62b880654899d6b67a7b76ff"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "15"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"f-SUy8f6bnkhW+gSIPnM+VP9zboFo\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Jun 2022 16:21:20 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "Order not found"
+				},
+				{
+					"name": "unauthorized access",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "auth_token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjJiODdhNmJkYjE0M2NiN2M1YzQ5NDI5Iiwicm9sZSI6ImN1c3RvbWVyIn0sImlhdCI6MTY1NjI1NzQ2NH0.ncq4XhkDMNfoniv0SQ1rEJEQ-RxRxrOqgm2kQBAXdlw",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"status\":\"Enroute\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/driver/updatestatus/:orderid",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"driver",
+								"updatestatus",
+								":orderid"
+							],
+							"variable": [
+								{
+									"key": "orderid",
+									"value": "62b880654899d6b67a7b73ff"
+								}
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "21"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"15-b/cytRJRM2bC8QpF6yxYdXCW+5Q\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 26 Jun 2022 16:26:20 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "\"Unauthorized access\""
+				}
+			]
+		}
+	]
+}
